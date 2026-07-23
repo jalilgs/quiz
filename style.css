@@ -84,6 +84,10 @@ body{
 }
 
 .answer-btn {
+    /* animation-name: slideInLeft ; */
+    animation-duration: 0.4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
     background-color: var(--card);
     color: var(--text);
     border: 2px solid var(--border);
@@ -92,6 +96,33 @@ body{
     cursor: pointer;
     text-align: left;
     transition: all 0.3s ease;
+}
+/* .answer-btn:nth-child(1) { animation-delay: 0s; }
+.answer-btn:nth-child(2) { animation-delay: 0.1s; }
+.answer-btn:nth-child(3) { animation-delay: 0.2s; }
+.answer-btn:nth-child(4) { animation-delay: 0.3s; } */
+
+.answer-btn:nth-child(odd) {
+  animation-name: slideInLeft;
+}
+
+.answer-btn:nth-child(even) {
+  animation-name: slideInRight;
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-60px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(60px); }
+  to   { opacity: 1; transform: translateX(0); }
 }
 
 .answer-btn:hover {
@@ -191,4 +222,15 @@ button:hover{
         padding: 12px 25px;
         font-size: 1rem;
     }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
