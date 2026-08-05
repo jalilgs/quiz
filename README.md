@@ -2,8 +2,8 @@
 
 A modern, responsive quiz game built with vanilla HTML, CSS, and JavaScript. Answer multiple-choice questions, get instant feedback on each pick, and see your final score with a personalized message at the end.
 
-🔗 Live demo: jalilgs.github.io/quiz
-🔗 **[Live Demo](jalilgs.github.io/quiz)**
+
+🔗 **[Live Demo](https://jalilgs.github.io/quiz/)**
 
 Show Image Show Image
 
